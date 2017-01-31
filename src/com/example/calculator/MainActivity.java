@@ -68,26 +68,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	    // defines the button that has been clicked and performs the corresponding operation
 	    // write operation into oper, we will use it later for output
-	    switch (v.getId()) {
-	    case R.id.btnAdd:
-	      oper = "+";
-	      result = num1 + num2;
-	      break;
-	    case R.id.btnSub:
-	      oper = "-";
-	      result = num1 - num2;
-	      break;
-	    case R.id.btnMult:
-	      oper = "*";
-	      result = num1 * num2;
-	      break;
-	    case R.id.btnDiv:
-	      oper = "/";
-	      result = num1 / num2;
-	      break;
-	    default:
-	      break;
-	    }
+	    switch (v.getId())
 
 	    // form the output line
 	    tvResult.setText(num1 + " " + oper + " " + num2 + " = " + result);
